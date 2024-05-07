@@ -29,10 +29,15 @@ header {
     width: 100vw;
 }
 
-ul,
-li {
+ul {
     display: flex;
     flex-direction: row;
+    padding: 0;
+
+}
+
+li {
+    display: flex;
     justify-content: space-evenly;
     list-style: none;
     margin: 0;
