@@ -1,0 +1,40 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: red;
+}
+
+.carousel {
+    width: 100vw;
+}
+
+.carousel__img {
+    width: 100vw;
+}
+
+ul,
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
