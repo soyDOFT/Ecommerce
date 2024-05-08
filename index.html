@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="logo.png">
-        <ul>
-            <li><a>DESKTOPS</a></li>
-            <li><a>LAPTOPS</a></li>
-            <li><a>ACCESSORIES</a></li>
+        <a class="logo-link" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+        <ul class="nav-links">
+            <li><a clas="" href="desktops.html">DESKTOPS</a></li>
+            <li><a href="laptops.html">LAPTOPS</a></li>
+            <li><a href="accessories.html">ACCESSORIES</a></li>
         </ul>
     </header>
     <main>
         <section class="carousel">
-            <img class="carousel__img" src="img/laptop-hero_images.webp">
-            <img class="carousel__img" src="img/laptop-hero_images.webp">
-            <img class="carousel__img" src="img/laptop-hero_images.webp">
+            <img class="carousel__img" src="img/laptop-hero_images.webp" alt="desktops">
+            <img class="carousel__img" src="img/laptop-hero_images.webp" alt="laptops">
+            <img class="carousel__img" src="img/laptop-hero_images.webp" alt="accessories">
             <p>INFORMATION AND OTHER TEXT</p>
         </section>
 
@@ -36,12 +39,12 @@
         </section>
     </main>
     <footer>
-        <nav>
+        <nav aria-label="Contact information">
             <p>SAMPLE INFORMATION</p>
             <p>SAMPLE INFORMATION</p>
             <p>SAMPLE INFORMATION</p>
         </nav>
-        <nav>
+        <nav aria-label="related links and site navigation">
             <a>LINK</a>
             <a>LINK</a>
             <a>LINK</a>

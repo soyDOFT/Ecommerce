@@ -1,6 +1,7 @@
 html {
     padding: 0;
     margin: 0;
+    font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -12,13 +13,19 @@ body {
 
 header {
     display: flex;
-    position: fixed;
+    position: sticky;
     flex-direction: row;
     justify-content: space-around;
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: red;
+    background-color: #1d1d1d;
+}
+
+.logo, .logo-link {
+    width: 6rem;
+    height: 1.5rem;
+    margin: auto 0;
 }
 
 .carousel {
@@ -29,17 +36,21 @@ header {
     width: 100vw;
 }
 
-ul {
+.nav-links {
     display: flex;
     flex-direction: row;
     padding: 0;
 
 }
 
-li {
-    display: flex;
-    justify-content: space-evenly;
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.nav-links li {
     list-style: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
