@@ -2,6 +2,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: "Manrope", sans-serif;
+    width: 100vw;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
     margin: 0;
     display: grid;
     width: 100vw;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -19,10 +22,11 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: #1d1d1d;
+    background-color: transparent;
 }
 
-.logo, .logo-link {
+.logo,
+.logo-link {
     width: 6rem;
     height: 1.5rem;
     margin: auto 0;
@@ -47,6 +51,12 @@ header {
     text-decoration: none;
     font-size: 0.8rem;
     color: white;
+    box-shadow: 0px 1px 5px 0px black;
+    margin: 5vw;
+}
+
+.nav-links a:hover {
+    box-shadow: 0px 1px 1px 0px white;
 }
 
 .nav-links li {
