@@ -6,7 +6,8 @@ html {
     overflow-x: hidden;
 }
 
-body, main {
+body,
+main {
     padding: 0;
     margin: 0;
     display: grid;
@@ -14,8 +15,9 @@ body, main {
     background-color: black;
     color: white;
     overflow-x: hidden;
-    
+
 }
+
 /* header nav bar */
 header {
     display: flex;
@@ -59,6 +61,7 @@ header {
     margin: 0.1vw;
     padding: 0;
 }
+
 /* hero image  */
 .carousel {
     width: 100%;
@@ -70,34 +73,50 @@ header {
 
 /* footer */
 footer {
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    border-top: 1px solid #f10000;
+    bottom: 0;
+    left: 0;
 }
 
 .footer__contact {
-    width: 50vw;
+    width: 50%;
     margin: 1rem;
 }
 
 .footer__links {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 50%;
     margin: 1rem;
 }
 
-.footer__links a {
+.footer__contact p {
     margin: 0.5rem;
     text-align: center;
 }
+
+.footer__links a {
+    margin: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
 
 @media only screen and (min-width: 450px) and (max-width: 991px) {
     html {
         width: 100%;
         overflow-x: visible;
     }
-    
-    body, main {
+
+    body,
+    main {
         width: 100%;
         overflow-x: visible;
     }
@@ -107,9 +126,10 @@ footer {
     html {
         width: 100%;
     }
-    
-    body, main {
+
+    body,
+    main {
         width: 100%;
         overflow-x: visible;
     }
-} 
+}
