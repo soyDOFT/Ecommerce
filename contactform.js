@@ -1,9 +1,9 @@
 function validateContactForm() {
-    e.preventDefault();
+    event.preventDefault();
 
     let finalAlert = "Error: ";
     let fname = document.forms["contact-form"]["fname"].value;
-    let regex = /^[0-9]{1,50}$/;
+    let regex = /[0-9]{1,50}/;
     if (fname === "" || regex.test(fname)) {
         finalAlert += "Enter your valid first name.\n";
     }
@@ -14,7 +14,7 @@ function validateContactForm() {
     }
 
     if (finalAlert === "Error: ") {
-        window.location.assign("thankyou.html");
+        window.location.assign("index.html");
     } else {
         alert(finalAlert);
     }
