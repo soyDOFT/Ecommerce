@@ -113,12 +113,6 @@ main {
     }
 }
 
-body {
-    max-width: 37.5rem;
-    padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
-}
-
 * {
 box-sizing: border-box;
 scrollbar-color: transparent transparent; /* thumb and track color */
@@ -274,7 +268,7 @@ left: -1rem;
 
 .carousel::after,
 .carousel__next {
-right: 2rem;
+right: -1rem;
 }
 
 .carousel::before,
@@ -387,10 +381,14 @@ footer {
 }
 
 #product-container {
-    margin: 50px;
+    padding: 50px;
     width: 100vw;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
+}
+
+.product-item {
+    padding: 0;
 }
 
 @media only screen and (min-width: 450px) and (max-width: 991px) {
@@ -423,6 +421,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        margin-top: 50px;
     }
 
     .product-series--BUDGET, .product-series--MEDIUM, .product-series--EXTREME {
@@ -442,6 +441,11 @@ footer {
     
     .product-series--MEDIUM img {
         grid-column: 3/4;
+    }
+
+    .carousel::after,
+    .carousel__next {
+        right: 2rem;
     }
 }
 
@@ -474,6 +478,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        margin-top: 50px;
     }
 
     .product-series--BUDGET, .product-series--MEDIUM, .product-series--EXTREME {
@@ -494,5 +499,10 @@ footer {
     .product-series--MEDIUM img {
         grid-column: 3/4;
         
+    }
+
+    .carousel::after,
+    .carousel__next {
+        right: 2rem;
     }
 }
