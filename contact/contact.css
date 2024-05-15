@@ -79,7 +79,7 @@ main {
     width: 100%;
     height: 1200px;
     /* background image settings for grid form */
-    background-image: url("img/Nightfall-backdrop.webp");
+    background-image: url("../img/Nightfall-backdrop.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,14 +256,13 @@ footer {
 
 /* tablet screens */
 @media screen and (min-width: 461px) and (max-width: 800px) {
+    .logo,
+    .logo-link {
+        width: 6rem;
+        height: 1.5rem;
+    }
 
 }
-
-.logo,
-    .logo-link {
-    width: 6rem;
-    height: 1.5rem;
-    }
 
 /* desktop screens */
 @media screen and (min-width: 800px) {
@@ -275,5 +274,11 @@ footer {
     main {
         width: 100%;
         overflow-x: visible;
-    }    
+    } 
+
+    .logo,
+    .logo-link {
+        width: 6rem;
+        height: 1.5rem;
+    }
 }
